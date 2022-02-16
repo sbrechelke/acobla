@@ -22,3 +22,5 @@
         npm install --save-dev cypress
     - run spec file from command line:
         npx cypress run --spec "cypress/integration/blaze.spec.js"
+    - OR simply build docker image:
+        docker build -t cypress_docker .
