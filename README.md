@@ -17,10 +17,11 @@
 3. Running test:
     - install node.js
     - init repo:
-        npm init
+        'npm init'
     - install cypress :
-        npm install --save-dev cypress
+        'npm install --save-dev cypress'
     - run spec file from command line:
-        npx cypress run --spec "cypress/integration/blaze.spec.js"
+        'npx cypress run --spec "cypress/integration/blaze.spec.js"'
     - OR simply build docker image:
-        docker build -t cypress_docker .
+        'docker pull cypress/browsers:node14.15.0-chrome96-ff94'
+        'docker build -t cypress_docker .'
