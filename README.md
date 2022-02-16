@@ -23,5 +23,5 @@
     - run spec file from command line:
         'npx cypress run --spec "cypress/integration/blaze.spec.js"'
     - OR simply build docker image:
-        'docker pull cypress/browsers:node14.15.0-chrome96-ff94'
+        'docker pull cypress/included:9.5.0'
         'docker build -t cypress_docker .'

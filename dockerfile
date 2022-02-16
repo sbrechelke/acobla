@@ -3,14 +3,13 @@
 # Chrome 96 & Firefox 94
  
 # pull image
-FROM cypress/browsers:node14.15.0-chrome96-ff94
+FROM cypress/included:9.5.0
 # make directory inside container
 RUN mkdir /app
 WORKDIR /app
 # copy cypress code from host to container
 COPY . /app
 # execute the tests
-RUN npm install
-RUN $(npm bin)/cypress verify
-RUN $(npm bin)/cypress run --browser firefox
-RUN $(npm bin)/cypress run --browser chrome
+RUN npm install --save-dev cypress
+RUN npx cypress verify
+RUN npx cypress run --browser chrome --spec "cypress/integration/blaze.spec.js"
