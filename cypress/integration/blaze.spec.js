@@ -2,7 +2,6 @@ import blazePO from '../integration/pageObjects'
 let testData = require('../fixtures/miscData.json');
 const blaze = new blazePO();
 var firstDeviceImgAttribute, firstDeviceNameText, firstDevicePriceText, firstDeviceDescriptionText;
-// var purchaseDate  = new Date().getDate() + "/" + new Date().getMonth()+1 + "/" + new Date().getFullYear();
 var purchaseDate  = new Date().getDate() + "/" + parseInt((new Date().getMonth() + 1).toString()) + "/" + new Date().getFullYear();
 console.log(purchaseDate)
 describe('', ()=>{
